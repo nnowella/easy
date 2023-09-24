@@ -73,9 +73,9 @@ int itc_str(int a, int b, int c) {
 
   if (a > 0 && b > 0 && c > 0 && a + b > c) {
 
-        float n = a;
-        float p = (n + b + c) / 2;
-        float s = itc_sqrt(p * (p - n) * (p - b) * (p - c));
+        int n = a;
+        double p = (n + b + c) / 2.0;
+        long long s = itc_sqrt(p * (p - n) * (p - b) * (p - c));
         return s;
 
     }
